@@ -7,8 +7,8 @@ const char index_html[] PROGMEM ={"<html>\n<head>\n\n<!-- your webpage info goes
 const char style_css[] PROGMEM = {"/*\n* multi-line comment\n*/\np{ line-height: 1em; }\nh1, h2, h3, h4{\n    color: orange;\n\tfont-weight: normal;\n\tline-height: 1.1em;\n\tmargin: 0 0 .5em 0;\n}\nh1{ font-size: 1.7em; }\nh2{ font-size: 1.5em; }\na{\n\tcolor: black;\n\ttext-decoration: none;\n}\n\ta:hover,\n\ta:active{ text-decoration: underline; }\n\n/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */\n\nbody{\n    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;\n}\n/* you can put your code all in one line like above */\n#page{ margin: 20px; }\n\n/* or on different lines like below */\n#logo{\n\twidth: 35%;\n\tmargin-top: 5px;\n\tfont-family: georgia;\n\tdisplay: inline-block;\n}\n/* but try and be as concise as possible */\n#nav{\n\twidth: 60%;\n\tdisplay: inline-block;\n\ttext-align: right;\n\tfloat: right;\n}\n\t#nav ul{}\n\t\t#nav ul li{\n\t\t\tdisplay: inline-block;\n\t\t\theight: 62px;\n\t\t}\n\t\t\t#nav ul li a{\n\t\t\t\tpadding: 20px;\n\t\t\t\tbackground: orange;\n\t\t\t\tcolor: white;\n\t\t\t}\n\t\t\t#nav ul li a:hover{\n\t\t\t\tbackground-color: #ffb424;\n\t\t\t\tbox-shadow: 0px 1px 1px #666;\n\t\t\t}\n\t\t\t#nav ul li a:active{ background-color: #ff8f00; }\n\n#content{\n\tmargin: 30px 0;\n\tbackground: white;\n\tpadding: 20px;\n\tclear: both;\n}\n#footer{\n\tborder-bottom: 1px #ccc solid;\n\tmargin-bottom: 10px;\n}\n\t#footer p{\n\t\ttext-align: right;\n\t\ttext-transform: uppercase;\n\t\tfont-size: 80%;\n\t\tcolor: grey;\n\t}\n\n/* multiple styles seperated by a , */\n#content,\nul li a{ box-shadow: 0px 1px 1px #999; }"};
 
 #ifndef STASSID
-#define STASSID "Dhira"
-#define STAPSK  "Qwerty@123"
+#define STASSID "your-ssid"
+#define STAPSK  "your-pass"
 #endif
 
 const char* ssid = STASSID;
